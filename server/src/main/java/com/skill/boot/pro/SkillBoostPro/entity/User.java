@@ -33,6 +33,8 @@ public class User {
     @GeneratedValue()
     private Long id;
 
+    private String name;
+
     @Column(name = "username", unique = true)
     private String username;
 
