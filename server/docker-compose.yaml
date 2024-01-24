@@ -1,0 +1,13 @@
+services:
+  db:
+    ports:
+      - 5432:5432
+    container_name: postgresql_container
+    image: postgres
+    environment:
+      - POSTGRES_DB=mydb
+      - POSTGRES_PASSWORD=admin
+      - POSTGRES_USER=admin
+    volumes:
+      - /home/svetli9805/postgres_conteiner_data/var/lib/postgresql/data
+    restart: always
