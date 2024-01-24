@@ -1,4 +1,4 @@
-package com.skill.boot.pro.SkillBoostPro.service.impl;
+package com.skill.boot.pro.SkillBoostPro;
 
 import com.skill.boot.pro.SkillBoostPro.entity.Role;
 import com.skill.boot.pro.SkillBoostPro.entity.User;
