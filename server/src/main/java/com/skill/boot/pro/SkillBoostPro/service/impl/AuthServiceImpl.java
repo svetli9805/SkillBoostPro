@@ -1,4 +1,4 @@
-package com.skill.boot.pro.SkillBoostPro;
+package com.skill.boot.pro.SkillBoostPro.service.impl;
 
 import com.skill.boot.pro.SkillBoostPro.entity.Role;
 import com.skill.boot.pro.SkillBoostPro.entity.User;
@@ -73,7 +73,7 @@ public class AuthServiceImpl implements AuthService {
         user.setPassword(passwordEncoder.encode(registerDto.getPassword()));
 
         Set<Role> roles = new HashSet<>();
-        Role userRole = roleRepository.findByName("STUDENT").get();
+        Role userRole = roleRepository.findByName("TEACHER").get();
         roles.add(userRole);
         user.setRoles(roles);
 

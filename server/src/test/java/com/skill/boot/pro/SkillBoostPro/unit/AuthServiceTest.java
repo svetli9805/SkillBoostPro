@@ -1,6 +1,5 @@
 package com.skill.boot.pro.SkillBoostPro.unit;
 
-import com.skill.boot.pro.SkillBoostPro.AuthServiceImpl;
 import com.skill.boot.pro.SkillBoostPro.entity.Role;
 import com.skill.boot.pro.SkillBoostPro.entity.User;
 import com.skill.boot.pro.SkillBoostPro.exception.ApiException;
@@ -10,6 +9,7 @@ import com.skill.boot.pro.SkillBoostPro.repository.RoleRepository;
 import com.skill.boot.pro.SkillBoostPro.repository.UserRepository;
 import com.skill.boot.pro.SkillBoostPro.security.JwtTokenProvider;
 import com.skill.boot.pro.SkillBoostPro.service.AuthService;
+import com.skill.boot.pro.SkillBoostPro.service.impl.AuthServiceImpl;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
